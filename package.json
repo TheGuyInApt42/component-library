@@ -28,5 +28,8 @@
 		"vitest": "^0.25.3"
 	},
 	"type": "module",
-	"svelte": "index.js"
+	"svelte": "index.js",
+	"dependencies": {
+		"pnpm": "^7.25.1"
+	}
 }

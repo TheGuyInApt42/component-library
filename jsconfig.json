@@ -3,10 +3,10 @@
 		"baseUrl": ".",
 		"paths": {
 			"$lib": [
-				"src"
+				"src/lib"
 			],
 			"$lib/*": [
-				"src/*"
+				"src/lib/*"
 			],
 			"$actions/*": [
 				"src/actions/*"
