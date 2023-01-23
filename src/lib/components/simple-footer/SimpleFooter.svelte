@@ -4,10 +4,10 @@
 	export let year = '2023';
 
 	const linkClass =
-		'text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-500 transition mr-1';
+		'link';
 </script>
 
-<footer class="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8 bg-black">
+<footer>
 	<h4>{title}</h4>
 	<div id="footer-social-icons">
 		<ExternalLink
@@ -87,37 +87,16 @@
         letter-spacing: 2px;
         text-transform: uppercase;
     }
+
+	.link{
+		color: white;
+
+	}
+
 	.mr-1 {
 		margin-right: 0.5rem;
 	}
-	.facebook-icon {
-		vertical-align: middle;
-		width: 40px;
-		height: 40px;
-		background: url('facebook.png');
-		display: inline-table;
-	}
-	.twitter-icon {
-		vertical-align: middle;
-		width: 40px;
-		height: 40px;
-		background: url('twitter.png');
-		display: inline-table;
-	}
-	.youtube-icon {
-		vertical-align: middle;
-		width: 40px;
-		height: 40px;
-		background: url('youtube.png');
-		display: inline-block;
-	}
-	.instagram-icon {
-		vertical-align: middle;
-		width: 40px;
-		height: 40px;
-		background: url('instagram.png');
-		display: inline-block;
-	}
+
 	svg{
         width: 32px;
         height: 32px;
