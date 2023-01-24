@@ -4,12 +4,12 @@
 	export let year = '2023';
 
 	const linkClass =
-		'link';
+		'text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-500 transition';
 </script>
 
-<footer>
+<footer class="flex flex-col justify-center w-full bg-black text-center py-5 gap-6">
 	<h4>{title}</h4>
-	<div id="footer-social-icons">
+	<div id="footer-social-icons" class="flex justify-center gap-2">
 		<ExternalLink
 			href="https://www.facebook.com/GameStop"
 			cssClasses={linkClass}
@@ -75,12 +75,6 @@
 </footer>
 
 <style>
-	footer {
-		background-color: black;
-        text-align: center;
-        padding: 1.25rem 0;
-	}
-
     h4{
         color: white;
         font-size: 18px;
@@ -88,14 +82,6 @@
         text-transform: uppercase;
     }
 
-	.link{
-		color: white;
-
-	}
-
-	.mr-1 {
-		margin-right: 0.5rem;
-	}
 
 	svg{
         width: 32px;
