@@ -7,9 +7,9 @@
     export let btnHeaders = ['Lunch', 'Dinner', 'Desserts'];
     let clickedType = 'All';
     export let tabContent = [
-        {text: 'test1', type: 'Lunch'},
-        {text: 'test2', type: 'Dinner'},
-]
+        /* {text: 'test1', type: 'Lunch'},
+        {text: 'test2', type: 'Dinner'}, */
+    ]
 
     // * Start: Local component properties
     
@@ -55,7 +55,7 @@
             <section class="tabbed-content justify-between lg:grid lg:grid-cols-3 flex flex-col items-center">
                 {#if tabContent.length > 0}
                     {#each filteredContent as content}
-                        <p>{content.text}</p>
+                        <slot>{content}</slot>
                     {/each}
                 {/if}
             </section>
