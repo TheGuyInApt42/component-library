@@ -11,17 +11,20 @@
 
 <footer class="flex flex-col justify-center w-full bg-black text-center py-5 gap-6">
     <div class="flex">
-        <div id="address" class="text-white flex-1">
+        <div id="address" class="flex-1 text-gray-400">
+            <h4 class="font-bold pb-4">Visit Us</h4>
             <slot>{@html address}</slot>
         </div>
     
-        <div id="hours" class="text-white flex-1">
+        <div id="hours" class="text-gray-400 flex-1">
+            <h4 class="font-bold pb-4">Hours</h4>
             <slot>{@html hours}</slot>
         </div>
     
-        <div id="footer-social-icons" class="flex flex-col justify-center gap-2 flex-1">
-            <h4>Contact Us Online</h4>
-            <ExternalLink
+        <div id="footer-social-icons" class="flex flex-col gap-2 flex-1">
+            <h4 class="font-bold pb-4">Contact Us Online</h4>
+            <div class="flex justify-center items-center gap-4">
+                <ExternalLink
                 href="https://www.facebook.com/GameStop"
                 cssClasses={linkClass}
                 ariaLabel={'Footer Facebook link'}
@@ -80,6 +83,10 @@
                     </svg>
                 </span>
             </ExternalLink>
+
+            </div>
+            
+            
         </div>
 
     </div>
@@ -112,5 +119,11 @@
 	svg{
         width: 32px;
         height: 32px;
+    }
+
+    /* style for highlighting current day */
+    :global(.current){
+        color: white;
+        font-weight: bold;
     }
 </style>

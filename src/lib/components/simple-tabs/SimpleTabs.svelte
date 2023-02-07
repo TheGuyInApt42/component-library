@@ -53,6 +53,7 @@
         <!-- Projects -->
         <div>
             <section class="tabbed-content justify-between lg:grid lg:grid-cols-3 flex flex-col items-center">
+                <slot name="content"><!-- optional fallback --></slot>
                 {#if tabContent.length > 0}
                     {#each filteredContent as content}
                         <slot>{content}</slot>
