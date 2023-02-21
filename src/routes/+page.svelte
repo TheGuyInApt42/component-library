@@ -146,7 +146,7 @@
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 
-<Tabs menus={menus}/>
+<Tabs list={menus} buttonStyle={'filterBtn'}/>
 
 
 
